@@ -1,10 +1,16 @@
-import styled from 'styled-components'
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Main from '../components/Main';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+const Index = () => {
+  return (
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  );
+};
 
-export default function Home() {
-  return <Title>My page</Title>
-}
+export default Index;
